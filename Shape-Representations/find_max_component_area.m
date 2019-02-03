@@ -44,7 +44,12 @@ for i = 1:number
 end
 
 % find the id of the largest component
-[area, id] = max(counters);    
-person = (labels == id);
+[area, id] = max(counters);
+if sum(area(:)) == 0
+    person = 0
+    area = 0
+else
+    person = (labels == id);
+end
 end
 

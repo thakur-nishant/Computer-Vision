@@ -1,4 +1,4 @@
-function [top, bottom, left, right] = find_bounding_box(curr_filename)
+function [top_row, bottom_row, left_column, right_column] = find_bounding_box(curr_filename)
 [area, person] = find_max_component_area(curr_filename)
 
 %%
@@ -6,10 +6,10 @@ function [top, bottom, left, right] = find_bounding_box(curr_filename)
 [row_coords col_coords] = find(person);
 
 original_image = double(imread(curr_filename));
-top = min(row_coords);
-bottom = max(row_coords);
-left = min(col_coords);
-right = max(col_coords);
+top_row = min(row_coords);
+bottom_row = max(row_coords);
+left_column = min(col_coords);
+right_column = max(col_coords);
 
 border_color = [255 255 0];
 
