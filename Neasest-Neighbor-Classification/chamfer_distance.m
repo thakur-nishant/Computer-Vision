@@ -10,7 +10,6 @@ n2 = sum(image2_binary(:));
 dt2 = bwdist(image1);
 chamfer_image2_to_image1 = sum(sum(image2_binary .* dt2)) / n2;
 
-distance = chamfer_image1_to_image2 + chamfer_image2_to_image1;
-
+distance = chamfer_image1_to_image2 + chamfer_image2_to_image1; 
 end
 
