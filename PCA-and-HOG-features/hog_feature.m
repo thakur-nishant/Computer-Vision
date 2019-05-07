@@ -19,7 +19,7 @@ cells_go(:,:,2) = gradient_orientations(double(cell2));
 cells_go(:,:,3) = gradient_orientations(double(cell3));
 cells_go(:,:,4) = gradient_orientations(double(cell4));
 
-range = [20:20:180];
+range = [10:20:170];
 histograms = [];
 for k = 1:4
     current_histogram = zeros(1,9);
