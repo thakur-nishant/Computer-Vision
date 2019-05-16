@@ -18,7 +18,7 @@ end
 fclose(fid);
 
 test = green_hand_trajectory(input_video, 2, 1277);
-result = zeros(10, 3);
+result = zeros(1, 3);
 j = 1;
 for i = 1:10
     s_frame = training_info(i,2);

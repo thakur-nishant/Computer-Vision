@@ -26,13 +26,13 @@ for i = 1:10
     if curr_image_distance > min_distance
         min_distance = curr_image_distance;
         class_label = i-1;
-%         save_img = result;
+        save_img = result;
     end
 end
-% figure(11);
-% imshow(save_img);
-% figure(12);
-% imshow(test_image);
+figure(11);
+imshow(save_img);
+figure(12);
+imshow(test_image);
 
 end
 
